@@ -185,13 +185,16 @@ a {
 
 .premiosEvento{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .premio{
-    flex: 1;
+    flex: 1 0 300px;
     text-align: center;
     padding: 20px;
+     box-sizing: border-box;
 }
+
 
 .contenedor-textos-main{
     width: 40%;
@@ -281,11 +284,18 @@ input[type="submit"]:hover{
     }
 
     .website img{
-        width: 100%;
+        width: 100%;    
     }
 
     .website .contenedor-textos-main{
         width: 100%;
+    }
+
+    /* premios */
+
+    .premiosEvento{
+        margin-top: 4rem;
+        flex-basis: 100%;
     }
 }
 @media screen and (max-width:400px){
